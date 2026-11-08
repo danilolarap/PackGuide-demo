@@ -1,0 +1,470 @@
+[
+  {
+    "id": "ITEM-01",
+    "name": "CAMISETAS",
+    "category": "ROPA",
+    "dimensions": [
+      28,
+      20,
+      4
+    ],
+    "unitVolumeL": 1.2,
+    "icon": "checkroom",
+    "quantity": 3
+  },
+  {
+    "id": "ITEM-02",
+    "name": "PANTALONES",
+    "category": "ROPA",
+    "dimensions": [
+      38,
+      26,
+      6
+    ],
+    "unitVolumeL": 2.8,
+    "icon": "dry_cleaning",
+    "quantity": 2
+  },
+  {
+    "id": "ITEM-03",
+    "name": "CALZADO",
+    "category": "CALZADO",
+    "dimensions": [
+      32,
+      22,
+      12
+    ],
+    "unitVolumeL": 4.5,
+    "icon": "directions_walk",
+    "quantity": 1
+  },
+  {
+    "id": "ITEM-04",
+    "name": "CHAQUETA",
+    "category": "ROPA",
+    "dimensions": [
+      40,
+      28,
+      8
+    ],
+    "unitVolumeL": 3.2,
+    "icon": "checkroom",
+    "quantity": 1
+  },
+  {
+    "id": "ITEM-05",
+    "name": "NECESER",
+    "category": "ASEO",
+    "dimensions": [
+      22,
+      14,
+      8
+    ],
+    "unitVolumeL": 1.5,
+    "icon": "medical_services",
+    "quantity": 1
+  },
+  {
+    "id": "ITEM-06",
+    "name": "CARGADORES & TECH",
+    "category": "TECH",
+    "dimensions": [
+      18,
+      12,
+      4
+    ],
+    "unitVolumeL": 0.8,
+    "icon": "devices",
+    "quantity": 1
+  },
+  {
+    "id": "ITEM-07",
+    "name": "ROPA INTERIOR",
+    "category": "ROPA",
+    "dimensions": [
+      18,
+      12,
+      3
+    ],
+    "unitVolumeL": 0.3,
+    "icon": "checkroom",
+    "quantity": 0
+  },
+  {
+    "id": "ITEM-08",
+    "name": "MEDIAS",
+    "category": "ROPA",
+    "dimensions": [
+      15,
+      10,
+      3
+    ],
+    "unitVolumeL": 0.2,
+    "icon": "checkroom",
+    "quantity": 0
+  },
+  {
+    "id": "ITEM-09",
+    "name": "PIJAMA",
+    "category": "ROPA",
+    "dimensions": [
+      30,
+      22,
+      5
+    ],
+    "unitVolumeL": 1.4,
+    "icon": "checkroom",
+    "quantity": 0
+  },
+  {
+    "id": "ITEM-10",
+    "name": "VESTIDO",
+    "category": "ROPA",
+    "dimensions": [
+      35,
+      25,
+      5
+    ],
+    "unitVolumeL": 1.8,
+    "icon": "checkroom",
+    "quantity": 0
+  },
+  {
+    "id": "ITEM-11",
+    "name": "FALDA",
+    "category": "ROPA",
+    "dimensions": [
+      28,
+      20,
+      4
+    ],
+    "unitVolumeL": 1,
+    "icon": "checkroom",
+    "quantity": 0
+  },
+  {
+    "id": "ITEM-12",
+    "name": "SHORTS",
+    "category": "ROPA",
+    "dimensions": [
+      28,
+      20,
+      4
+    ],
+    "unitVolumeL": 1,
+    "icon": "checkroom",
+    "quantity": 0
+  },
+  {
+    "id": "ITEM-13",
+    "name": "SUÉTER",
+    "category": "ROPA",
+    "dimensions": [
+      35,
+      28,
+      7
+    ],
+    "unitVolumeL": 2.3,
+    "icon": "checkroom",
+    "quantity": 0
+  },
+  {
+    "id": "ITEM-14",
+    "name": "CAMISA",
+    "category": "ROPA",
+    "dimensions": [
+      30,
+      23,
+      4
+    ],
+    "unitVolumeL": 1.2,
+    "icon": "checkroom",
+    "quantity": 0
+  },
+  {
+    "id": "ITEM-15",
+    "name": "TRAJE DE BAÑO",
+    "category": "ROPA",
+    "dimensions": [
+      20,
+      15,
+      2
+    ],
+    "unitVolumeL": 0.3,
+    "icon": "checkroom",
+    "quantity": 0
+  },
+  {
+    "id": "ITEM-16",
+    "name": "ZAPATOS FORMALES",
+    "category": "CALZADO",
+    "dimensions": [
+      34,
+      23,
+      12
+    ],
+    "unitVolumeL": 5,
+    "icon": "directions_walk",
+    "quantity": 0
+  },
+  {
+    "id": "ITEM-17",
+    "name": "SANDALIAS",
+    "category": "CALZADO",
+    "dimensions": [
+      28,
+      20,
+      6
+    ],
+    "unitVolumeL": 2,
+    "icon": "directions_walk",
+    "quantity": 0
+  },
+  {
+    "id": "ITEM-18",
+    "name": "PANTUFLAS",
+    "category": "CALZADO",
+    "dimensions": [
+      28,
+      18,
+      7
+    ],
+    "unitVolumeL": 2.1,
+    "icon": "directions_walk",
+    "quantity": 0
+  },
+  {
+    "id": "ITEM-19",
+    "name": "CEPILLO DE DIENTES",
+    "category": "ASEO",
+    "dimensions": [
+      20,
+      3,
+      3
+    ],
+    "unitVolumeL": 0.1,
+    "icon": "medical_services",
+    "quantity": 0
+  },
+  {
+    "id": "ITEM-20",
+    "name": "PASTA DENTAL",
+    "category": "ASEO",
+    "dimensions": [
+      16,
+      5,
+      4
+    ],
+    "unitVolumeL": 0.2,
+    "icon": "medical_services",
+    "quantity": 0
+  },
+  {
+    "id": "ITEM-21",
+    "name": "DESODORANTE",
+    "category": "ASEO",
+    "dimensions": [
+      14,
+      5,
+      5
+    ],
+    "unitVolumeL": 0.3,
+    "icon": "medical_services",
+    "quantity": 0
+  },
+  {
+    "id": "ITEM-22",
+    "name": "CHAMPÚ",
+    "category": "ASEO",
+    "dimensions": [
+      16,
+      6,
+      6
+    ],
+    "unitVolumeL": 0.6,
+    "icon": "medical_services",
+    "quantity": 0
+  },
+  {
+    "id": "ITEM-23",
+    "name": "JABÓN",
+    "category": "ASEO",
+    "dimensions": [
+      10,
+      7,
+      4
+    ],
+    "unitVolumeL": 0.3,
+    "icon": "medical_services",
+    "quantity": 0
+  },
+  {
+    "id": "ITEM-24",
+    "name": "PROTECTOR SOLAR",
+    "category": "ASEO",
+    "dimensions": [
+      15,
+      6,
+      5
+    ],
+    "unitVolumeL": 0.5,
+    "icon": "medical_services",
+    "quantity": 0
+  },
+  {
+    "id": "ITEM-25",
+    "name": "MEDICAMENTOS",
+    "category": "ASEO",
+    "dimensions": [
+      18,
+      12,
+      5
+    ],
+    "unitVolumeL": 0.8,
+    "icon": "medical_services",
+    "quantity": 0
+  },
+  {
+    "id": "ITEM-26",
+    "name": "LENTES DE CONTACTO",
+    "category": "ASEO",
+    "dimensions": [
+      12,
+      8,
+      3
+    ],
+    "unitVolumeL": 0.2,
+    "icon": "medical_services",
+    "quantity": 0
+  },
+  {
+    "id": "ITEM-27",
+    "name": "TELÉFONO",
+    "category": "TECH",
+    "dimensions": [
+      16,
+      8,
+      2
+    ],
+    "unitVolumeL": 0.3,
+    "icon": "devices",
+    "quantity": 0
+  },
+  {
+    "id": "ITEM-28",
+    "name": "TABLETA",
+    "category": "TECH",
+    "dimensions": [
+      26,
+      18,
+      2
+    ],
+    "unitVolumeL": 0.7,
+    "icon": "devices",
+    "quantity": 0
+  },
+  {
+    "id": "ITEM-29",
+    "name": "PORTÁTIL",
+    "category": "TECH",
+    "dimensions": [
+      35,
+      25,
+      3
+    ],
+    "unitVolumeL": 2.6,
+    "icon": "devices",
+    "quantity": 0
+  },
+  {
+    "id": "ITEM-30",
+    "name": "AURICULARES",
+    "category": "TECH",
+    "dimensions": [
+      18,
+      15,
+      8
+    ],
+    "unitVolumeL": 1,
+    "icon": "devices",
+    "quantity": 0
+  },
+  {
+    "id": "ITEM-31",
+    "name": "BATERÍA EXTERNA",
+    "category": "TECH",
+    "dimensions": [
+      15,
+      8,
+      3
+    ],
+    "unitVolumeL": 0.4,
+    "icon": "devices",
+    "quantity": 0
+  },
+  {
+    "id": "ITEM-32",
+    "name": "ADAPTADOR DE ENCHUFE",
+    "category": "TECH",
+    "dimensions": [
+      8,
+      7,
+      5
+    ],
+    "unitVolumeL": 0.3,
+    "icon": "devices",
+    "quantity": 0
+  },
+  {
+    "id": "ITEM-33",
+    "name": "CÁMARA",
+    "category": "TECH",
+    "dimensions": [
+      18,
+      13,
+      10
+    ],
+    "unitVolumeL": 1.7,
+    "icon": "devices",
+    "quantity": 0
+  },
+  {
+    "id": "ITEM-34",
+    "name": "TARJETAS DE MEMORIA",
+    "category": "TECH",
+    "dimensions": [
+      8,
+      6,
+      2
+    ],
+    "unitVolumeL": 0.1,
+    "icon": "devices",
+    "quantity": 0
+  },
+  {
+    "id": "ITEM-35",
+    "name": "CABLE USB",
+    "category": "TECH",
+    "dimensions": [
+      12,
+      9,
+      3
+    ],
+    "unitVolumeL": 0.2,
+    "icon": "devices",
+    "quantity": 0
+  },
+  {
+    "id": "ITEM-36",
+    "name": "RELOJ",
+    "category": "TECH",
+    "dimensions": [
+      10,
+      8,
+      5
+    ],
+    "unitVolumeL": 0.4,
+    "icon": "devices",
+    "quantity": 0
+  }
+]

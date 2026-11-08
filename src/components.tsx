@@ -1,0 +1,18 @@
+import {useEffect,useRef} from 'react';
+import type {ButtonHTMLAttributes,ReactNode} from 'react';
+import {useCopy} from './i18n';
+const icons=import.meta.glob('/node_modules/@material-design-icons/svg/outlined/{settings,qr_code_scanner,inventory_2,checklist,analytics,photo_camera,add_photo_alternate,search,arrow_forward,remove,add,luggage,check_circle,radio_button_unchecked,light_mode,dark_mode,language,logout,checkroom,dry_cleaning,directions_walk,medical_services,devices}.svg',{eager:true,query:'?raw',import:'default'}) as Record<string,string>;
+export function Icon({name,size=24}:{name:string;size?:number}) {return <span aria-hidden="true" className="icon" style={{width:size,height:size}} dangerouslySetInnerHTML={{__html:icons[`/node_modules/@material-design-icons/svg/outlined/${name}.svg`]??''}}/>;}
+export function Dots(){return <svg width="32" height="32" aria-hidden="true">{Array.from({length:36},(_,i)=><circle key={i} cx={(i%6+.5)*32/6} cy={(Math.floor(i/6)+.5)*32/6} r={32/6*.16} fill={i%6===5&&i>=18?'var(--red)':'currentColor'} opacity={i%6===5&&i>=18?1:.18}/>)}</svg>;}
+export function Led({green=false,size=8}:{green?:boolean;size?:number}) {return <span aria-hidden="true" className="led" style={{width:size*1.8,height:size*1.8,color:green?'var(--green)':'var(--red)'}}><i style={{width:size*1.4,height:size*1.4,opacity:.12}}/><i style={{width:size,height:size}}/></span>;}
+export function Header({title,system=false}:{title:string;system?:boolean}) {const {t}=useCopy();return <header className="hud">{system&&<p className="label-small muted system">SYS // PACKING_OS</p>}<div className="row"><h1>{t(title)}</h1><Dots/></div></header>;}
+export function Card({tag,children,strong=false,className=''}:{tag?:string;children:ReactNode;strong?:boolean;className?:string}) {const {t}=useCopy();return <section className={`tech-card ${strong?'strong':''} ${className}`}>{tag&&<div className="card-tag label-small muted"><i/>{t(tag)}</div>}{children}</section>;}
+export function Button({children,secondary=false,icon,className='',...props}:ButtonHTMLAttributes<HTMLButtonElement>&{secondary?:boolean;icon?:string}) {return <button {...props} className={`ascii ${secondary?'secondary':''} ${className}`}>{icon&&<Icon name={icon} size={18}/>}<span>{children}</span></button>;}
+export function TextButton({children,className='',...props}:ButtonHTMLAttributes<HTMLButtonElement>) {return <button {...props} className={`text-button ${className}`}>{children}</button>;}
+export function Badge({children,category=false,over=false}:{children:ReactNode;category?:boolean;over?:boolean}) {return <span className={`badge ${category?'category':''}`}>{!category&&<Led green={!over} size={6}/>}<span>{children}</span></span>;}
+export function Progress({value,over=false}:{value:number;over?:boolean}) {return <div className="progress" role="progressbar" aria-valuenow={Math.trunc(value*100)} aria-valuemin={0} aria-valuemax={100}><i style={{width:`${Math.min(100,Math.max(0,value*100))}%`,background:over?'var(--red)':undefined}}/></div>;}
+export function Modal({children,onClose,className='',label}:{children:ReactNode;onClose:()=>void;className?:string;label:string}) {
+ const ref=useRef<HTMLDialogElement>(null);
+ useEffect(()=>{const dialog=ref.current!;dialog.showModal();return()=>dialog.close();},[]);
+ return <dialog ref={ref} className={className} aria-label={label} onCancel={e=>{e.preventDefault();onClose();}} onClick={e=>{if(e.target===ref.current){const r=ref.current.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)onClose();}}}>{children}</dialog>;
+}

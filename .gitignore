@@ -1,0 +1,11 @@
+node_modules/
+dist/
+playwright-report/
+test-results/
+.sites.local/
+.sites-runtime/
+.openai/
+.env
+.env.*
+!.env.example
+*.tsbuildinfo
