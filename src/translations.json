@@ -41,7 +41,7 @@
   "DESTINO DEL ARTÍCULO": "ITEM DESTINATION",
   "DESTINOS DEL VIAJE": "TRIP BAGS",
   "TODAS LAS MALETAS": "ALL BAGS",
-  "Reparte las cantidades de cada artículo entre las maletas elegidas en Escáner.": "Split item quantities between the bags selected in Scanner.",
+  "Reparte las cantidades de cada artículo entre las maletas elegidas en Escáner.": "Assign each item's quantity to the bags selected in Measurements.",
   "En Catálogo podrás repartir los artículos entre las maletas seleccionadas.": "In Catalog you can split items between the selected bags.",
   "CONTINUAR AL CATÁLOGO": "CONTINUE TO CATALOG",
   "QUITAR MALETA": "REMOVE BAG",
@@ -312,6 +312,8 @@
   "MANO": "PERSONAL",
   "CABINA": "CABIN",
   "BODEGA": "CHECKED",
-  "Reparte las cantidades de cada artículo entre las maletas elegidas en Escáner.": "Assign each item's quantity to the bags selected in Measurements.",
-  "Reparte las cantidades de cada artículo entre las maletas elegidas en Medidas.": "Assign each item's quantity to the bags selected in Measurements."
+  "Reparte las cantidades de cada artículo entre las maletas elegidas en Medidas.": "Assign each item's quantity to the bags selected in Measurements.",
+  "Demo local · las cuentas no se sincronizan con Android.": "Local demo · accounts do not sync with Android.",
+  "Toca una maleta para ver su resumen y evaluar sus fotos.": "Tap a bag to view its summary and assess its photos.",
+  "empacadas": "packed"
 }

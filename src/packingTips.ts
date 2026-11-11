@@ -1,0 +1,22 @@
+﻿export const packingTips:[string,string][]=[
+['Enrolla las camisetas ligeras para agruparlas con facilidad.','Roll light T-shirts to keep them together.'],
+['Dobla los pantalones en capas planas.','Fold trousers in flat layers.'],
+['Separa el calzado en bolsas.','Keep shoes in separate bags.'],
+['Agrupa calcetines y ropa interior en un organizador.','Group socks and underwear in a packing cube.'],
+['Deja accesible la ropa del primer día.','Keep your first-day outfit accessible.'],
+['Usa un neceser cerrado para los productos de aseo.','Use a closed toiletry bag.'],
+['Guarda juntos cables y cargadores.','Keep cables and chargers together.'],
+['Usa organizadores para separar conjuntos.','Use packing cubes to separate outfits.'],
+['Lleva una bolsa para separar la ropa usada.','Bring a bag for used clothes.'],
+['Reparte el peso y deja los documentos accesibles.','Distribute weight and keep documents accessible.'],
+['Rellena huecos pequeños con calcetines.','Fill small gaps with socks.'],
+['Protege las prendas delicadas con una funda.','Protect delicate garments with a cover.'],
+['Coloca los objetos pesados en la base.','Place heavy items at the base.'],
+['Prepara tus conjuntos antes de empacar.','Plan outfits before packing.'],
+['Aprovecha el perímetro para colocar cinturones.','Place belts around the perimeter.'],
+['Lleva una bolsa plegable para imprevistos.','Bring a foldable bag for unexpected needs.'],
+['Protege los objetos frágiles con prendas suaves.','Cushion fragile items with soft clothing.'],
+['Ajusta suavemente las correas interiores.','Gently tighten the interior straps.'],
+['Revisa que puedas acceder a tus artículos esenciales.','Check that essential items remain accessible.'],
+['Reserva espacio para volver a empacar al regreso.','Leave room to repack for the return trip.']];
+export function pickTips():[number,number]{const a=Math.floor(Math.random()*packingTips.length);const b=Math.floor(Math.random()*(packingTips.length-1));return [a,b>=a?b+1:b];}
