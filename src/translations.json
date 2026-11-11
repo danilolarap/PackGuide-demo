@@ -301,5 +301,17 @@
   "AÑADIR FOTOS": "ADD PHOTOS",
   "GENERAR REFERENCIA VISUAL": "CREATE VISUAL REFERENCE",
   "Referencia de organización creada en el dispositivo": "Packing reference created on the device",
-  "Cambió el plan. Genera una nueva referencia.": "The plan changed. Create a new reference."
+  "Cambió el plan. Genera una nueva referencia.": "The plan changed. Create a new reference.",
+  "CATÁLOGO DE ÍTEMS": "ITEM CATALOG",
+  "MEDIDAS DEL EQUIPAJE": "LUGGAGE MEASUREMENTS",
+  "RESUMEN DEL EQUIPAJE": "LUGGAGE SUMMARY",
+  "GUÍA DE EMPACADO": "PACKING GUIDE",
+  "[CATÁLOGO]": "[CATALOG]",
+  "[GUÍA]": "[GUIDE]",
+  "ACCESO RÁPIDO": "QUICK ACCESS",
+  "MANO": "PERSONAL",
+  "CABINA": "CABIN",
+  "BODEGA": "CHECKED",
+  "Reparte las cantidades de cada artículo entre las maletas elegidas en Escáner.": "Assign each item's quantity to the bags selected in Measurements.",
+  "Reparte las cantidades de cada artículo entre las maletas elegidas en Medidas.": "Assign each item's quantity to the bags selected in Measurements."
 }
