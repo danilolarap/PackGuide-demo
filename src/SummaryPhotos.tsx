@@ -1,0 +1,11 @@
+import {useState} from 'react';
+import {Button,Card,TextButton} from './components';
+import {useCopy} from './i18n';
+import type {Bag,BagType} from './model';
+import type {Photo} from './composition';
+import {OrganizedPreview} from './OrganizedPreview';
+
+export function SummaryPhotos({bag,photos,work,error,pick,removePhoto,cancel}:{bag:Bag;photos:Photo[];work?:string;error?:string;pick:(type:BagType,review?:boolean,camera?:boolean)=>void;removePhoto:(type:BagType,index:number)=>void;cancel:(type:BagType)=>void}){
+ const {t,choose}=useCopy();const [chosen,setChosen]=useState<string|null>(null),[open,setOpen]=useState(false);const selected=photos.find(p=>p.id===chosen)??photos[0];
+ return <Card tag="VISTA PREVIA DE ORGANIZACIÓN"><div className="stack gap10"><p className="body-small muted">{choose('Añade hasta cuatro fotos por maleta. Puedes abrir el esquema sin foto.','Add up to four photos per bag. You can open the diagram without a photo.')}</p><div className="review-photos">{photos.map((photo,index)=><div key={photo.id} className={selected?.id===photo.id?'chosen-photo':''}><button className="photo-choice" onClick={()=>{setChosen(photo.id);setOpen(true);}} aria-label={`${choose('Ver organización','View organization')} ${index+1}`}><img src={photo.url} alt={`${choose('Foto','Photo')} ${index+1}`}/><span>{choose('VER ORGANIZACIÓN','VIEW ORGANIZATION')}</span></button><TextButton disabled={!!work} onClick={()=>removePhoto(bag.type,index)}>{t('QUITAR FOTO')}</TextButton></div>)}</div><div className="row gap8 summary-photo-actions"><Button secondary disabled={photos.length>=4||!!work} onClick={()=>pick(bag.type,true)}>{t('AÑADIR FOTOS')}</Button><Button secondary disabled={photos.length>=4||!!work} onClick={()=>pick(bag.type,true,true)}>{t('TOMAR FOTO')}</Button></div>{work&&<div className="row gap8"><span className="spinner small"/><p className="body-small">{choose('Abriendo fotos…','Opening photos…')}</p><TextButton onClick={()=>cancel(bag.type)}>{t('CANCELAR')}</TextButton></div>}{error&&<p role="status" className="body-small red">{t(error)}</p>}<Button onClick={()=>{setChosen(null);setOpen(true);}}>{choose('VER VISTA PREVIA','VIEW PREVIEW')}</Button></div>{open&&<OrganizedPreview bag={bag} photo={selected} onClose={()=>setOpen(false)}/>}</Card>;
+}
